@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding-top: 110px;
+}
+
+.navbar {
+    min-height: 80px;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    color: #009970 !important;
+    font-size: 24px;
+}
+
+.login-button {
+    background-color: #009970;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.login-button:hover {
+    background-color: #00b383;
+    color: #fff;
+}
+
+.nav-link {
+    color: #666777 !important;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #000 !important;
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 2px;
+    background-color: #009970;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover::before,
+.nav-link.active::before {
+    width: 100%;
+    visibility: visible;
+}
+
+.hero-section {
+    background: url("hero-bg.png") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    min-height: calc(100vh - 110px);
+}
